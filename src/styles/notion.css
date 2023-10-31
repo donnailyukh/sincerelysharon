@@ -25,7 +25,7 @@
 }
 
 .notion-table-of-contents-active-item span {
-  @apply !text-red-500;
+  @apply !text-pink-500;
 }
 
 .notion-page-content img{

@@ -37,7 +37,7 @@ export default function RelatedPosts({ posts }: { posts: Post[] }) {
       {numPosts < posts.length && (
         <button
           onClick={handleLoadMore}
-          className="mt-10 self-center rounded-3xl bg-red-500 px-8 py-2 text-white opacity-70 transition-all duration-300 hover:scale-110 hover:opacity-100"
+          className="mt-10 self-center rounded-3xl bg-pink-500 px-8 py-2 text-white opacity-70 transition-all duration-300 hover:scale-110 hover:opacity-100"
         >
           Load More
         </button>
