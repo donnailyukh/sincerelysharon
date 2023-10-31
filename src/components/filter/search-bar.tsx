@@ -41,8 +41,8 @@ export default function SearchBar() {
         placeholder="Search posts"
         onChange={handleInputChange}
         value={query}
-        className={`w-full rounded-full border-[2px] border-gray-300 py-4 pl-14 pr-12 text-xl font-medium hover:border-red-500 focus:border-red-500 focus:bg-customGray-base focus:outline-none dark:border-gray-400 dark:bg-customGray-dark dark:focus:bg-customGray-light ${
-          isHovering && 'border-red-500'
+        className={`w-full rounded-full border-[2px] border-gray-300 py-4 pl-14 pr-12 text-xl font-medium hover:border-pink-500 focus:border-pink-500 focus:bg-customGray-base focus:outline-none dark:border-gray-400 dark:bg-customGray-dark dark:focus:bg-customGray-light ${
+          isHovering && 'border-pink-500'
         }`}
       />
     </div>

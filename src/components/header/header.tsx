@@ -14,7 +14,7 @@ export default function Header() {
   return (
     <nav className="flex flex-col justify-between py-12 md:flex-row">
       <Link href="/" className="self-start md:self-auto">
-        <h1 className="text-3xl font-bold">Jihoo Kim</h1>
+        <h1 className="text-3xl font-bold">Sincerely, Sharon ♡</h1>
       </Link>
       <div className="my-6 flex space-x-8 self-center md:my-0 md:self-auto">
         <ul className="flex space-x-8">
@@ -27,9 +27,9 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="absolute right-[10vw] top-12 md:static">
+        {/*<div className="absolute right-[10vw] top-12 md:static">
           <ThemeToggle />
-        </div>
+          </div>*/}
       </div>
     </nav>
   );
