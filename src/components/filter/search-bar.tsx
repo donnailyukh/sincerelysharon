@@ -26,7 +26,7 @@ export default function SearchBar() {
   return (
     <div
       ref={hoverRef}
-      className="relative mx-auto w-[80%] max-w-[24rem] md:mx-0"
+      className="relative mx-auto w-full max-w-[24rem] md:mx-0"
     >
       <BsSearch className=" absolute left-6 flex h-full items-center text-xl text-gray-400" />
       {query && (isHovering || isFocusing) && (
@@ -41,7 +41,7 @@ export default function SearchBar() {
         placeholder="Search posts"
         onChange={handleInputChange}
         value={query}
-        className={`w-full rounded-full border-[2px] border-gray-300 py-4 pl-14 pr-12 text-xl font-medium hover:border-pink-500 focus:border-pink-500 focus:bg-customGray-base focus:outline-none dark:border-gray-400 dark:bg-customGray-dark dark:focus:bg-customGray-light ${
+        className={`w-full rounded-md border-[2px] border-gray-300 py-2 pl-16 pr-4 font-medium hover:border-pink-500 focus:border-pink-500 focus:outline-none ${
           isHovering && 'border-pink-500'
         }`}
       />
