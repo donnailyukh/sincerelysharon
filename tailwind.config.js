@@ -9,6 +9,9 @@ module.exports = {
           base: '#eeeeee',
           dark: '#1f2028',
         },
+        customPink: {
+          light: '#ede4e9'
+        }
       },
     },
   },

@@ -23,8 +23,8 @@ export default function Category({ category }: { category: string }) {
         };
       } else {
         return {
-          ...prevCategories,
-          selected: [...prevCategories.selected, category],
+          ...prevCategories, ...prevCategories.selected,
+          selected: [category],
         };
       }
     });
@@ -35,11 +35,9 @@ export default function Category({ category }: { category: string }) {
   return (
     <button
       onClick={handleCategoryClick(category)}
-      className={`my-2 mr-6 cursor-pointer rounded-full px-6 py-2 ring-pink-500 transition-all duration-300 hover:ring-offset-4 dark:ring-offset-customGray-dark ${
-        checked
-          ? 'bg-black text-white ring-[3px] ring-offset-4 dark:bg-white dark:text-black'
-          : 'bg-secondary'
-      } ${!active && 'pointer-events-none opacity-25'} ${
+      className={`my-2 mr-4 cursor-pointer rounded-md px-4 py-1 ring-pink-500 transition-all duration-300 hover:ring-offset-4 ${
+        checked ? 'bg-black text-white ring-[3px] ring-offset-4' : 'bg-secondary'
+      } ${!active && 'opacity-25'} ${
         active && !isTouchDevice() && 'hover:ring-[3px]'
       }`}
     >
