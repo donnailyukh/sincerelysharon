@@ -19,12 +19,8 @@ export default function NotionPage({
   post: Post;
   recordMap: ExtendedRecordMap;
 }) {
-  const { theme } = useTheme();
-  const mounted = useMounted();
-
   return (
     <NotionRenderer
-      darkMode={mounted ? theme === 'dark' : false}
       recordMap={recordMap}
       fullPage
       forceCustomImages

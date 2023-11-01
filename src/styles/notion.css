@@ -31,3 +31,15 @@
 .notion-page-content img{
     position: static !important;
 }
+
+.notion-title {
+  @apply font-playfair;
+}
+
+.notion-text {
+  @apply font-newsCycle text-lg;
+}
+
+.notion-page {
+  width: 1024px;
+}

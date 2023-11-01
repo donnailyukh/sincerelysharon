@@ -4,7 +4,7 @@ import { getAllPostsFromNotion } from '@/services/posts';
 import { toUniqueArray } from '@/utils/to-unique-array';
 
 export const metadata = {
-  title: 'Blog',
+  title: 'Sincerely, Sharon',
   description: 'All posts are written by Sharon Zavlin.',
 };
 
@@ -20,7 +20,7 @@ export default async function BlogPage() {
 
   return (
     <>
-      <section className="mb-16 mt-0 space-y-8 md:mt-10">
+      <section className="mb-10 mt-0 space-y-8 md:mt-5">
         <CategoryFilter allCategories={allCategories} />
       </section>
       <PostsGrid allPosts={allPosts} />

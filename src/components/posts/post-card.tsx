@@ -25,8 +25,8 @@ export default function PostCard({
           />
         </div>
         <div className="flex h-48 flex-col p-4">
-          <h3 className="line-clamp-2 h-16 text-2xl font-bold">{title}</h3>
-          <time className="mb-4 mt-2 pl-2 text-sm text-gray-400">{date}</time>
+          <h3 className="line-clamp-2 h-16 text-2xl font-playfair">{title}</h3>
+          <time className="mb-4 mt-2 pl-2 text-sm font-cursive text-gray-400">{date}</time>
           <CategoryList categories={categories} />
         </div>
       </article>
