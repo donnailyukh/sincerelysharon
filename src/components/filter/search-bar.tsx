@@ -41,7 +41,7 @@ export default function SearchBar() {
         placeholder="Search posts"
         onChange={handleInputChange}
         value={query}
-        className={`w-full mt-3 mb-3 rounded-md border-[2px] border-white py-2 pl-14 pr-4 hover:border-pink-500 focus:border-pink-500 focus:outline-none ${
+        className={`w-full mt-3 mb-3 rounded-md border-[2px] border-white bg-white py-2 pl-14 pr-4 hover:border-pink-500 focus:border-pink-500 focus:outline-none ${
           isHovering && 'border-pink-500'
         }`}
       />
