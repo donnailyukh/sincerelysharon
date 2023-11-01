@@ -13,7 +13,12 @@ module.exports = {
           light: '#ede4e9'
         }
       },
+
+      fontFamily: {
+        cursive: ["var(--font-ooohbaby)"],
+        playfair: ["var(--font-playfair)"],
+        newsCycle: ["var(--font-newsCycle)"],
+      },
     },
   },
-  darkMode: 'class',
 };
