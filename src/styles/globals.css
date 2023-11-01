@@ -29,3 +29,5 @@ div,
 button {
   -webkit-tap-highlight-color: transparent;
 }
+
+:root{ color-scheme: only light}
