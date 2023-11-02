@@ -3,12 +3,10 @@
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
-import { useTheme } from 'next-themes';
 import { Block, ExtendedRecordMap } from 'notion-types';
 import { NotionRenderer } from 'react-notion-x';
 
 import CategoryList from '@/components/category-list';
-import useMounted from '@/hooks/use-mounted';
 import '@/styles/notion.css';
 import { Post } from '@/types/post';
 

@@ -2,6 +2,7 @@ import CategoryFilter from '@/components/filter/category-filter';
 import PostsGrid from '@/components/posts/posts-grid';
 import { getAllPostsFromNotion } from '@/services/posts';
 import { toUniqueArray } from '@/utils/to-unique-array';
+import Header from '@/components/header/header';
 
 export const metadata = {
   title: 'Sincerely, Sharon',
@@ -20,6 +21,7 @@ export default async function BlogPage() {
 
   return (
     <>
+      <Header showSearch="true"/>
       <section className="mb-10 mt-0 space-y-8 md:mt-5">
         <CategoryFilter allCategories={allCategories} />
       </section>

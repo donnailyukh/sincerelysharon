@@ -2,7 +2,6 @@ import 'katex/dist/katex.min.css';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'react-notion-x/src/styles.css';
 
-import Header from '@/components/header/header';
 import Provider from '@/components/provider';
 import ScrollUpButton from '@/components/scroll-up-button';
 import '@/styles/globals.css';
@@ -47,7 +46,6 @@ export default function RootLayout({
     <html lang="en" className={`${ooohBaby.variable} ${newsCycle.variable} ${playfair.variable} font-sans`}>
       <body className="text-primary font-newsCycle bg-primary relative mx-auto mb-20 flex w-full max-w-screen-xl flex-col px-[10vw] md:px-[5vw]">
         <Provider>
-          <Header />
           <main>{children}</main>
           <div className="fixed bottom-12 right-10">
             <ScrollUpButton />

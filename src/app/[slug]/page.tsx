@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
+import Header from '@/components/header/header';
 import NotionPage from '@/components/notion-page';
 import RelatedPosts from '@/components/posts/related-posts';
 import { getRecordMap } from '@/libs/notion';
@@ -23,6 +24,8 @@ export default async function PostPage({
 
   if (!post.published) {
     return (
+      <>
+      <Header/>
       <article
         data-revalidated-at={new Date().getTime()}
         className="mx-auto mt-40 text-center"
@@ -32,7 +35,7 @@ export default async function PostPage({
           <span className="mr-2">&larr;</span>
           <span>Go to list page</span>
         </Link>
-      </article>
+      </article></>
     );
   }
 
@@ -47,6 +50,7 @@ export default async function PostPage({
 
   return (
     <>
+      <Header/>
       <article
         data-revalidated-at={new Date().getTime()}
         className="mt-4 flex flex-col items-center md:mt-20"
