@@ -12,7 +12,7 @@ export default function CategoryFilter({
 }) {
   return (
     <div className="flex flex-col items-center space-y-4 pt-4">
-      <div className="flex min-h-[56px] shrink justify-center gap-y-[0.3rem]">
+      <div className="flex md:flex-row flex-col min-h-[56px] shrink justify-center gap-y-[0.3rem]">
         {allCategories.map((category) => (
           <Category key={category} category={category} />
         ))}
